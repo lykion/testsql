@@ -44,7 +44,7 @@ try:
         insert_sql = "INSERT INTO nb_alarm_status(id,imei,device_id,stu_code,status,creator,create_date,updator," \
                      "update_date) VALUES(0, '869662034322599', " \
                      "'4664fdd9-c258-42a1-a3ee-5er6ba1967cb', '8696620343292572ccfb7c5-094b-ab', '2', NULL, " \
-                     "'2018-03-10 15:03:04', NULL, '2018-03-10 15:03:05');"         # primary key is id
+                     "NOW(), NULL, NOW());"         # primary key is id
         delete_sql = "DELETE FROM nb_alarm_status WHERE id='1104982367744954677';"  # delete sql
         update_sql = "UPDATE nb_alarm_status SET creator=1 WHERE id='1104982367744954678';"
         update_sql_1 = "UPDATE nb_alarm_status SET tt=UNIX_TIMESTAMP(tt);"          # update sql --> datetime to stamp
