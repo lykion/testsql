@@ -35,7 +35,7 @@ try:
             updator = row[7]
             update_date = row[8]
             db_result.add_row([id, imei, stu_code, device_id, status, creator, create_date, updator, update_date])
-        # print(db_result)
+        print(db_result)
         print('********************select successful********************')
     except Exception as e:
         print('查询失败 -- {}'.format(e))
